@@ -3,7 +3,7 @@
   # 理解成 sudo
   become: yes
   tasks:
-    debug:
-      msg: "hello world"
+    - debug:
+        msg: "hello world"
   
 
