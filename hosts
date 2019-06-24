@@ -1,0 +1,7 @@
+[hello]
+192.168.44.11
+
+
+[hello]
+ansible_ssh_user=vagrant
+ansible_ssh_pass=vagrant

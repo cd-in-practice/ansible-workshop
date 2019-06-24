@@ -1,0 +1,12 @@
+[Unit]
+Description=hello
+After=network.target
+
+[Service]
+User={{app_run_user}}
+Group={{app_run_group}}
+ExecStart=/usr/local/bin/java -jar /apps/hello/bin/helloworld-0.0.2.jar
+PIDFile=/apps/hello/bin/hello.pid
+
+[Install]
+WantedBy=multi-user.target
