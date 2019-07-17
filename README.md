@@ -15,7 +15,7 @@
 7. 监听 hello 服务是否启动成功
     * wait_for 模块: https://docs.ansible.com/ansible/latest/modules/wait_for_module.html
 8. 为目标机器安装 JDK 1.8:
-    1. 在本地仓库 roles 目录
+    1. 在本地仓库中创建 roles 目录
     2. clone 代码：https://github.com/geerlingguy/ansible-role-java 到 roles 目录中
     3. 在 playbook.yml 文件中加入 ansible-role-java 的role
 9. 创建自定义 role: hello role
