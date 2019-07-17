@@ -1,5 +1,5 @@
-## 打怪任务
-1. 执行 ansible-playbook -i hosts playbook.yml 成功
+## 打怪升级任务
+1. 执行 `ansible-playbook -i hosts playbook.yml` 成功
 2. 创建用户 apps 及用户组 apps：
     * user 模块: https://docs.ansible.com/ansible/latest/modules/user_module.html
     * group 模块: https://docs.ansible.com/ansible/latest/modules/group_module.html
@@ -18,4 +18,10 @@
     1. 在本地仓库 roles 目录
     2. clone 代码：https://github.com/geerlingguy/ansible-role-java 到 roles 目录中
     3. 在 playbook.yml 文件中加入 ansible-role-java 的role
-
+9. 创建自定义 role: hello role
+    1. 进入 roles 目录：cd roles
+    2. 使用命令生成 role 模板：`ansible-galaxy init hello`
+    3. 将 hello 的部署逻辑（在 playbook.yml 中）写入到 hello role 中
+10. 将 hello 部署到多台机器
+    * 需要修改 hosts 文件
+11. 多环境部署
